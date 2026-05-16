@@ -17,6 +17,8 @@ Run in Supabase SQL Editor in order:
 
 ## Required env vars
 
+Copy `.env.example` to `.env` locally and fill in your Supabase values. **Do not commit `.env`** — it is gitignored; only `.env.example` belongs in the repo.
+
 - `EXPO_PUBLIC_SUPABASE_URL`
 - `EXPO_PUBLIC_SUPABASE_ANON_KEY`
 

@@ -1,8 +1,10 @@
 # dependencies
 node_modules/
 
-# local environment secrets
+# local environment secrets (never commit real keys)
 .env
+.env.*
+!.env.example
 .env.local
 
 # Expo

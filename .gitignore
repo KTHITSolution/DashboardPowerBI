@@ -1,0 +1,15 @@
+# dependencies
+node_modules/
+
+# local environment secrets
+.env
+.env.local
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db

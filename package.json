@@ -1,0 +1,32 @@
+{
+  "name": "pj02-secure-portal",
+  "version": "1.0.0",
+  "private": true,
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
+    "web": "expo start --web",
+    "security:audit": "npm audit --audit-level=high",
+    "security:audit:prod": "npm audit --omit=dev --audit-level=high",
+    "security:deps:outdated": "npm outdated || exit 0",
+    "security:check": "npm run security:audit:prod && npm run security:deps:outdated"
+  },
+  "dependencies": {
+    "@expo/metro-runtime": "~5.0.5",
+    "@supabase/supabase-js": "^2.49.8",
+    "expo": "~53.0.0",
+    "expo-status-bar": "~2.2.3",
+    "powerbi-client": "^2.23.1",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-native": "^0.79.6",
+    "react-native-web": "^0.20.0",
+    "react-native-webview": "^13.13.5"
+  },
+  "devDependencies": {
+    "@types/react": "~19.0.10",
+    "typescript": "~5.8.3"
+  }
+}
